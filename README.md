@@ -1,1 +1,3 @@
-# docker-go-hello-world
+GO Hello World
+
+docker run jsmilenium/go-hello-world
