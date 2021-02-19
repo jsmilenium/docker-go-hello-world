@@ -1,0 +1,21 @@
+FROM golang:1.11-alpine3.7 AS builder
+
+LABEL maintainer="Josué Jr. <jsmilenium2003@hotmail.com>"
+
+WORKDIR /app
+
+COPY hello-world.go .
+
+RUN go build hello-world.go
+
+FROM alpine:3.7
+WORKDIR /app
+COPY --from=builder /app .
+
+EXPOSE 8080
+
+ENTRYPOINT ["./hello-world"]
+
+
+
+
