@@ -1,6 +1,6 @@
 GoLang Hello World with Multistage Building
 
-Create a hello world image docker with GoLang up to 2mb.
+Create a hello world image docker with GoLang up to 2mb size.
 
 Commands:
 
